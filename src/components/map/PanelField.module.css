@@ -1,0 +1,25 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 800px;
+    margin: 0 1em;
+    border: 2px solid black;
+}
+
+.inputBlock {
+    min-height: 100px;
+}
+
+.addButton {
+    min-height: 100px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.content {
+    min-width: 200px;
+    min-height: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
