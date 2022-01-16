@@ -21,8 +21,8 @@ export const CustomInput = memo(
   ({
     placeholder,
     typeInput,
-    className,
     value,
+    className,
     onChange,
     name,
     onKeyPress,

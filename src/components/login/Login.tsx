@@ -28,39 +28,47 @@ export const Login = (): ReturnComponentType => {
   };
 
   return (
-    <div className={style.mainContainer}>
-      <div className={style.content}>
-        <span>Вход Pегистрация</span>
+    <div className={style.bodyContainer}>
+      <div className={style.mainContainer}>
+        <div className={style.content}>
+          <span className={style.header}>
+            Вход <span className={style.registration}>Pегистрация</span>
+          </span>
 
-        <div>
-          <CustomInput
-            typeInput="email"
-            placeholder="Email"
-            value={email}
-            onChange={handleEmail}
-          />
+          <div className={style.inputBlock}>
+            <CustomInput
+              // className={style.input}
+              typeInput="email"
+              placeholder="Email"
+              value={email}
+              onChange={handleEmail}
+            />
+
+            <CustomInput
+              // className={style.input}
+              typeInput="password"
+              placeholder="Password"
+              value={password}
+              onChange={handlePassword}
+            />
+            <div style={{ display: 'flex' }}>
+              <input
+                className={style.checkbox}
+                type="checkbox"
+                checked={rememberMe}
+                onChange={onChangeCheckBoxHandler}
+              />
+              <div className={style.checkboxHeader}>Запомнить меня?</div>
+            </div>
+            <div />
+          </div>
+          <button className={style.btn} type="button" onClick={onLoginButtonClick}>
+            Войти
+          </button>
+          <Link to={MAP_PATH.recover} className={style.link}>
+            Забыли пароль?
+          </Link>
         </div>
-        <div>
-          <CustomInput
-            typeInput="password"
-            placeholder="Password"
-            value={password}
-            onChange={handlePassword}
-          />
-        </div>
-        <div>
-          <input
-            placeholder="remember me"
-            type="checkbox"
-            checked={rememberMe}
-            onChange={onChangeCheckBoxHandler}
-          />
-        </div>
-        <div>
-          {/* eslint-disable-next-line react/button-has-type */}
-          <button onClick={onLoginButtonClick}>Войти</button>
-        </div>
-        <Link to={MAP_PATH.recover}> Забыли пароль? </Link>
       </div>
     </div>
   );

@@ -1,24 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Ubuntu&display=swap');
+@font-face {
+    font-family: "HandelGothic";
+    src: url('../../assets/fonts/Handel-Gothic-TL.ttf.woff');
+}
+
+.bodyContainer {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background: #101223;
+}
+
 .mainContainer {
-  display: flex;
-  height: 100%;
-  /*border: 2px solid red;*/
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    height: 100%;
+    min-width: 1366px;
+    /*min-height: 737px;*/
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    linear-gradient(180deg, rgba(0, 0, 0, 0) 82.67%, rgba(0, 0, 0, 0.2) 100%),
+    url('../../assets/image.png') no-repeat;
+    background-size: cover;
+    mix-blend-mode: lighten;
+    justify-content: center;
+    align-items: center;
+
 
 }
-input[type=checkbox]{
-  margin-top: 3px;
-}
+
 .content {
-  min-width: 500px;
-  min-height: 500px;
-  border: 2px solid black;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  text-align: center;
-  align-items: center;
-  border-radius: 10px;
-  box-shadow: 0 0 37px 0 rgba(255, 255, 255, 0.49);
-  padding: 1em;
+    min-width: 500px;
+    min-height: 500px;
+    /*border: 2px solid black;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0 0 37px 0 rgba(255, 255, 255, 0.49);
+    padding: 1em;
+    background: rgba(63, 99, 142, 0.38);
+    background-blend-mode: overlay;
+    backdrop-filter: blur(70px);
+
+}
+
+.header, .registration {
+    font-family: "HandelGothic";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    margin: 0 12px;
+
+}
+
+.registration {
+    color: rgba(164, 115, 193, 0.49);
+    mix-blend-mode: normal;
+    margin: 0 12px 0 0;
+}
+
+.inputBlock {
+    width: 297px;
+    height: 184px;
+    /*border: 2px solid black;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.link {
+    font-family: "HandelGothic";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.06em;
+    color: #FFF323;
+    text-decoration: none;
+}
+
+.btn {
+    width: 297px;
+    height: 40px;
+    border: 3px solid #FFF323;
+    box-sizing: border-box;
+    font-family: 'HandelGothic';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFF323;
+    background: transparent;
+}
+
+.checkboxHeader {
+    color: #FFFFFF ;
+    padding: 0 0 12px 0 ;
+}
+.checkbox{
+    background: transparent;
+    border: 1px solid #FFFFFF;
 }

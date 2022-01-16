@@ -4,10 +4,10 @@ import { Route, Routes } from 'react-router-dom';
 
 import { MAP_PATH } from '../../App';
 import { ReturnComponentType } from '../../types';
+import { CommonMap } from '../map/CommonMap';
 import { Recover } from '../recover/Recover';
 
 import { Login } from 'components/login/Login';
-import { CommonMap } from 'components/map/CommonMap';
 
 export const RoutesNav = (): ReturnComponentType => (
   <Routes>
