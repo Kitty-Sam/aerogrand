@@ -10,7 +10,6 @@ export const enum MAP_PATH {
   map = 'map',
   recover = 'recover',
 }
-
 export const App: FC = (): ReturnComponentType => (
   <div>
     <NavLink to={MAP_PATH.login}>login</NavLink>---
